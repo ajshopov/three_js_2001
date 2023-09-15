@@ -53,8 +53,8 @@ scene.add(pointLight);
 // const ambientLight = new THREE.AmbientLight(0xffffff);
 // scene.add(ambientLight);
 
-const lightHelper = new THREE.PointLightHelper(pointLight);
-scene.add(lightHelper);
+// const lightHelper = new THREE.PointLightHelper(pointLight);
+// scene.add(lightHelper);
 
 function addStar(){
   const geometry = new THREE.SphereGeometry(0.2, 24, 24);
