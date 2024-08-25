@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "repository": "https://github.com/ajshopov/three_js_2001.git",
-  "homepage": "https://ajshopov.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
