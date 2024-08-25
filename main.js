@@ -25,10 +25,8 @@ renderer.setPixelRatio( window.devicePixelRatio );
 camera.aspect = window.innerWidth / window.innerHeight;
 renderer.setSize( window.innerWidth, window.innerHeight );
 camera.position.set( 0, 0, 0 );
-// controls.update();
+controls.update();
 camera.updateProjectionMatrix();
-
-
 
 
 // const gridHelper = new THREE.GridHelper(200, 50);
@@ -268,17 +266,17 @@ scene.add( light );
 function animate (){
   // controls.update();
   if (model) {
-    model.position.x -= 0.01; // Move 0.01 units along the X-axis in each frame
-    model.position.y -= 0.003; 
+    model.position.x -= 0.005; // Move 0.01 units along the X-axis in each frame
+    model.position.y -= 0.0015; 
     // model.position.z += 0.01;
-    model.rotation.z -= 0.001;
+    model.rotation.z -= 0.0005;
   }
 
   planet.rotation.y += 0.0001;
 
-  camera.position.x += 0.002;
+  camera.position.x += 0.001;
 
-    camera.position.z -= 0.02;
+    camera.position.z -= 0.01;
 
 
   if (resized) resize();
