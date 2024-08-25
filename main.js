@@ -294,6 +294,14 @@ function animate (){
 
 animate();
 
+function resetAnimation() {
+  console.log('resetting animation');
+  model.position.set(10, 0, -60);
+  camera.position.set( 0, 0, 0 );
+  camera.rotation.set( 0, 0, 0 );
+  camera.updateProjectionMatrix();
+};
+
 // console log camera position every 2 seconds
 setInterval(function(){ console.log(camera.position); }, 2000);
 
@@ -343,3 +351,7 @@ function resize() {
 
 const loadingScreen = document.getElementById('loading-screen');
 const loadingText = document.getElementById('loading-text');
+
+
+document.getElementById('resetButton').addEventListener('click', resetAnimation );
+
