@@ -4,11 +4,6 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 
-// things to work on
-// correct camera perspective on load
-// loading screen?
-// camera angle
-// music
 
 let resized = false;
 
@@ -24,7 +19,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 renderer.setPixelRatio( window.devicePixelRatio );
 camera.aspect = window.innerWidth / window.innerHeight;
 renderer.setSize( window.innerWidth, window.innerHeight );
-camera.position.set( 0, 0, 0 );
+camera.position.set( 0,0,13 );
 controls.update();
 camera.updateProjectionMatrix();
 
